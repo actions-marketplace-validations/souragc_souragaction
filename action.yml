@@ -1,0 +1,12 @@
+name: 'souragcaction'
+description: 'Prints name'
+author: '3agl3'
+inputs:
+  name:
+    description: 'whats your name'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: '/entrypoint.sh'
